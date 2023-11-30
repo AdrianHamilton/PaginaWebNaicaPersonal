@@ -1,0 +1,360 @@
+
+.naicavalores {
+  height: 80vh;
+  background-size: cover; 
+  background-position: center;
+  top: 80px;
+  overflow: hidden;
+  padding: 0
+}
+
+body {padding: 0; margin: 0}
+
+.naicanavegacion {
+  height: 80px;
+  background: var(--negro);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999999!important
+}
+
+.naicalogo img {
+    height: 70px;
+    margin-top: -15px;
+    filter: saturate(5);
+}
+
+.naicainterior {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  justify-content: space-between
+}
+
+.movimiento {
+  position: relative;
+  z-index:1;
+  padding:2px 6px;
+}
+
+.movimiento:after {
+  position: absolute;
+  top:0; bottom: 0;
+  right: 0;left: 0;
+  display: block;
+  background-color: var(--azul);
+  content: "";
+  transform: translate3d(-101%,0,0);
+  z-index:-1;
+  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.movimiento:hover {
+  color: #fff!important;
+}
+
+.movimiento:hover:after {
+  transform: translate3d(0,0,0);
+}
+
+a.enlace {
+  font: 500 20px var(--fuente);
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 10px;
+  letter-spacing: 2px;
+  display:inline-block!important;
+  position: relative;
+  overflow: hidden;
+  padding:5px 10px;
+  text-transform: uppercase;
+  transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+a.enlace:hover {  color:#CF2034; transition: 0.2s}
+
+:root {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --blanco2: #eaeaea;
+  --azul: #4B50FF;
+  --acqua: #78D2C3;
+  --lila: #9650FF;
+  padding: 0;
+  --fuente: Montserrat;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@2000;300;400&display=swap');
+  margin: 0
+}
+
+.copynaica {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  background: #000;
+  font: 400 15px Montserrat;
+  letter-spacing: 10px;
+}
+
+.nombrenaica {
+  height: 80vh;
+  background: url(https://images2.imgbox.com/17/ec/5IPFwo2y_o.jpeg);
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+.nombreinside {
+  width: 80%;
+  margin: 0 auto
+}
+
+.cajatexto {
+  width: 50%;
+  color: #fff;
+  font: 25px montserrat;
+  margin-top: 50px;
+  line-height: 40px
+}
+
+.cajanombre {
+  display: block;
+  color: #fff;
+  font: 50px montserrat;
+  text-transform: uppercase;
+}
+
+.naicasinergia {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background: url(https://images2.imgbox.com/f5/c4/f7dg7vz0_o.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start
+}
+
+.naicavalor {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background: url(https://images2.imgbox.com/dc/ce/PHKPqrH0_o.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+
+.sinergiainfo {
+  width: 50%;
+  margin: 0 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap
+}
+
+.sinergiainfo m {
+  font: 100px montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  margin: 50px 0;
+  display: block
+}
+
+.sinergiainfo n {
+  color: #fff;
+  font: 25px montserrat;
+  display: block;
+  line-height: 40px;
+  margin-right: 50px
+}
+
+.sinergiainfo line {
+  height: 5px;
+  background: linear-gradient(90deg, var(--azul), transparent);
+  margin-right: 50px;
+  width: 60%
+}
+
+.valorinfo {
+  width: 50%;
+  margin: 0 200px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: right
+}
+
+.valorinfo m {
+  font: 100px montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  margin: 50px 0;
+  display: block
+}
+
+.valorinfo n {
+  color: #fff;
+  font: 25px montserrat;
+  display: block;
+  line-height: 40px;
+  margin-right: 50px
+}
+
+.valorinfo line {
+  height: 5px;
+  background: linear-gradient(90deg, var(--acqua), transparent);
+  margin-right: 50px;
+  width: 60%
+}
+
+.naicanosotros {
+  height: 70vh;
+  background-image: url(https://images2.imgbox.com/3a/ec/SFn27IS6_o.jpeg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center
+}
+
+.nosotrosinfo {
+  width: 50%;
+  font: 50px montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  margin: 0 200px
+}
+
+.experiencias {
+  height: 80vh;
+  background: var(--negro);
+  overflow: hidden
+}
+
+.expmid {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.expnombre {
+  color: #fff;
+  font: 80px montserrat;
+  text-transform: uppercase;
+  letter-spacing: 40px
+}
+
+.informacion {
+  height: 40vh;
+  background: #000;
+}
+
+.infocontactos {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh
+}
+
+.footernaica {
+  width: 300px;
+}
+
+.footernaica img {
+  width: 300px
+}
+
+.footerdireccion {
+  color: #fff;
+  font: 15px montserrat;
+  line-height: 30px;
+  letter-spacing: 2px
+}
+
+.footerdireccion m, .footerdireccion n {
+  display: block;
+  margin: 20px 0;
+  font-size: 25px
+}
+
+.footerdireccion o {
+  display: block;
+  font-size: 15px
+}
+
+.footerdireccion i {
+  font-size: 25px;
+  margin-right: 5px
+}
+
+.copynaica {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  background: #000;
+  font: 400 15px Montserrat;
+  letter-spacing: 10px;
+}
+
+.footerlogos img {
+  margin: 0 30px;
+  height: 50px;
+}
+
+.footerlogos {
+  display: block!important;
+}
+
+.naicainformacion {
+  height: 230px;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+  overflow: hidden;
+  padding: 0 40px;
+  flex-wrap: wrap
+}
+
+.naicafoot {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.naicainformacion img {
+  height: 80px;
+  margin-top: -20px;
+    filter: saturate(5);
+}
+
+.naicainformacion span {
+  margin: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.naicainformacion i {
+  margin: 0 5px;
+  font-size: 20px
+}
+
+.naicafoot a { 
+color: #fff;
+}

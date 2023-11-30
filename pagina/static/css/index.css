@@ -1,0 +1,731 @@
+:after,
+:before,
+*{
+    box-sizing: border-box;
+}
+.container {
+  width:1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+      line-height:1.1;
+}
+.hero-slider {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 991px) {
+  .hero-slider {
+    height: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-slider {
+    height: 500px;
+  }
+}
+
+.hero-slider .swiper-slide {
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero-slider .swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hero-slider .slide-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-slider .swiper-button-prev,
+.hero-slider .swiper-button-next {
+  background: transparent;
+  width: 55px;
+  height: 55px;
+  line-height: 53px;
+  margin-top: -30px;
+  text-align: center;
+  border: 2px solid #d4d3d3;
+  border-radius: 55px;
+  opacity:0;
+  visibility:hidden;
+  transition:all .3s ease;
+}
+.hero-slider:hover .swiper-button-prev,
+.hero-slider:hover .swiper-button-next {
+  transform:translateX(0);
+  opacity:1;
+  visibility:visible;
+}
+
+@media (max-width: 767px) {
+  .hero-slider .swiper-button-prev,
+  .hero-slider .swiper-button-next {
+    display: none;
+  }
+}
+
+.hero-slider .swiper-button-prev {
+  left: 25px;
+  transform:translateX(50px);
+}
+
+.hero-slider .swiper-button-prev:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f060";
+  font-size: 15px;
+  color: #d4d3d3;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.hero-slider .swiper-button-next {
+  right: 25px;
+  transform:translateX(-50px);
+}
+
+.hero-slider .swiper-button-next:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  font-size: 15px;
+  color: #d4d3d3;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  height: 100vh;
+}
+
+.hero-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  text-align: left;
+  line-height: 12px;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.3;
+  background:#fff;
+  transition:all .2s ease;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+  opacity:1;
+}
+
+.hero-slider .swiper-container-horizontal > .swiper-pagination-bullets,
+.hero-slider .swiper-pagination-custom,
+.hero-slider .swiper-pagination-fraction {
+  bottom: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-slider .swiper-container-horizontal > .swiper-pagination-bullets,
+  .hero-slider .swiper-pagination-custom,
+  .hero-slider .swiper-pagination-fraction {
+/*     display: none; */
+  }
+}
+.swiper-pagination {
+  text-align:left;
+}
+
+.hero-slider .swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom:50px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+@media (min-width: 767px) {
+  .hero-slider .swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom:30px;
+ 
+}
+}
+/*--------------------------------------------------------------
+	#hero-style
+--------------------------------------------------------------*/
+.hero-style {
+  height: 100vh;
+  transition:all .4s ease;
+}
+
+@media (max-width: 991px) {
+  .hero-style {
+    height: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-style{
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-style .container {
+    padding-top: 95px;
+  }
+}
+
+.hero-style .slide-title,
+.hero-style .slide-text,
+.hero-style .slide-btns {
+  max-width: 690px;
+}
+
+.hero-style .slide-title h2 {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0 0 40px;
+  text-transform: capitalize;
+  transition:all .4s ease;
+}
+
+@media (max-width: 1199px) {
+  .hero-style .slide-title h2 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-style .slide-title h2 {
+    font-size: 50px;
+    margin: 0 0 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-style .slide-title h2 {
+    font-size: 35px;
+    margin: 0 0 30px;
+  }
+}
+
+.hero-style .slide-text p {
+  opacity: 0.8;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: 0 0 40px;
+  transition:all .4s ease;
+}
+
+@media (max-width: 767px) {
+  .hero-style .slide-text p {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 0 30px;
+  }
+}
+
+.hero-style .slide-btns > a:first-child {
+  margin-right: 10px;
+}
+
+
+/*--------------------------------------------------------------
+	#button-style
+--------------------------------------------------------------*/
+.theme-btn, .theme-btn-s2{
+    background-color: #ffffff;
+    font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color:#2b3b95;
+    padding: 9px 32px;
+    border: 0; 
+  border-radius: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: initial;
+  transition:all .4s ease;
+}
+a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.theme-btn-s2{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #131e4a;
+}
+.theme-btn:hover, .theme-btn-s2:hover, .theme-btn:focus, .theme-btn-s2:focus, .theme-btn:active, .theme-btn-s2:active {
+    background-color: var(--azul) ;
+    color: #fff;
+}
+.theme-btn-s3{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+i.fa-chevron-circle-right{
+  height:22px;
+  width:22px;
+}
+a:hover {
+    text-decoration: none;
+}
+@media (max-width: 991px){
+  .theme-btn, .theme-btn-s2, .theme-btn-s3 {
+    font-size: 13px;
+    padding: 15px 25px;
+  }
+}
+@media (max-width: 767px){
+  .theme-btn, .theme-btn-s2{
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+}
+
+body#naicaweb {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --blanco2: #eaeaea;
+  --azul: #4B50FF;
+  --acqua: #78D2C3;
+  --lila: #9650FF;
+  padding: 0;
+  --fuente: Montserrat;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+  margin: 0
+}
+
+.naicanavegacion {
+  height: 80px;
+  background: var(--negro);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999999!important
+}
+
+.naicalogo img {
+    height: 70px;
+    margin-top: -15px;
+    filter: saturate(5);
+}
+
+.naicainterior {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  justify-content: space-between
+}
+
+.naicabanner {
+  height: 100vh;
+  background: var(--blanco2);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.naicatitulo {
+  font: 300 40px Montserrat;
+  text-transform: uppercase;
+  line-height: 10px;
+  margin-right: 100px
+}
+
+.naicatarjeta img {
+  height: 55vh
+}
+
+.naicatitulo n, .naicatitulo o {
+  display: block;
+}
+
+.naicatitulo o {
+  text-align: right
+}
+
+.naicatop {
+  display: flex; 
+ align-items: center
+}
+
+.naicatitulo m {
+  font: 400 200px var(--fuente)
+}
+
+.naicaproductos {
+  background: var(--blanco);
+  padding: 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 850px
+}
+
+.productoinfo1 {
+    width: 64%;
+    overflow: hidden;
+    height: 500px;
+}
+
+.naicaproducto1 {
+    width: 49%;
+    height: 500px;
+    background: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.productonombre1 {
+    font: 40px var(--fuente);
+    color: var(--blanco);
+    padding: 30px 20px 0px;
+}
+
+.productonombre1 m {
+    font-size: 20px;
+}
+
+.productonombre1 line {
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, var(--acqua), transparent);
+  margin: 10px 0
+}
+
+.naicaproducto2 {
+  background: var(--negro);
+  width: 49%;
+  height: 500px
+}
+
+.naicaproducto3 {
+    width: 60%;
+    background: var(--negro);
+    height: 300px;
+    border-radius: 150px 0 0 150px;
+}
+
+.naicaproducto4 {
+  width: 38%;
+  height: 300px;
+  background: var(--negro)
+}
+
+.productoimagen {
+  width: 250px;
+  height: 500px;
+}
+
+.productoimagen2 {
+  width: 100%;
+  height: 200px
+}
+
+.productoinfo2 {
+  background: var(--negro);
+  height: 300px
+}
+
+.naicavalores {
+  height: 100vh;
+  background-size: cover; 
+  background-position: center;
+  top: 80px;
+  overflow: hidden;
+  background-attachment: fixed
+}
+
+.naicadireccion, .naicadireccion img {
+  display: block; 
+  width: 500px;
+  font: 15px var(--fuente)
+}
+
+.naicadireccion {
+    display: flex;
+    align-items: center;
+}
+
+.naicaformulario {
+  width: 500px
+}
+
+ .naicadireccion m, .naicadireccion n, .naicadireccion c {
+  display: block;
+   letter-spacing: .5px;
+   margin: 5px 0
+}
+
+.naicadireccion o {
+  margin: 10px 0;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.naicadireccion i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.formulariodatos m {
+  height: 50px;
+  outline: 1px solid #222;
+  display: flex;
+  margin: 30px 0;
+  font: 12px var(--fuente);
+  background: #0d0d0d;
+  align-items: center;
+  padding: 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.naicaformulario n {
+  font: 35px var(--fuente);
+  display: block;
+  margin-bottom: 50px;
+}
+
+.movimiento {
+  position: relative;
+  z-index:1;
+  padding:2px 6px;
+}
+
+.movimiento:after {
+  position: absolute;
+  top:0; bottom: 0;
+  right: 0;left: 0;
+  display: block;
+  background-color: var(--azul);
+  content: "";
+  transform: translate3d(-101%,0,0);
+  z-index:-1;
+  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.movimiento:hover {
+  color: #fff!important;
+}
+
+.movimiento:hover:after {
+  transform: translate3d(0,0,0);
+}
+
+a.enlace {
+  font: 500 20px var(--fuente);
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 10px;
+  letter-spacing: 2px;
+  display:inline-block!important;
+  position: relative;
+  overflow: hidden;
+  padding:5px 10px;
+  text-transform: uppercase;
+  transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+a.enlace:hover {  color:#CF2034; transition: 0.2s}
+
+.productoimagen3 {
+    width: 250px;
+    height: 250px;
+    background: var(--lila);
+    border-radius: 100%;
+    overflow: hidden;
+    border: 27px solid var(--blanco);
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+.productoimagen sombra {
+  display: block;
+  width: 250px;
+  height: 500px;
+  background: linear-gradient(-90deg, var(--negro), transparent);
+}
+
+#chat-circle {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #128C7E;
+  width: 80px;
+  height: 80px;  
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.cuadrocomparativo {
+  margin: 50px auto
+}
+
+
+.productosnaica {
+  width: 80%;
+    text-align: center;
+  margin: 0 auto;
+  font-family: Montserrat
+}
+
+.productosnaica th {
+  font: 700 20px Montserrat;
+  text-transform: uppercase;
+  height: 100px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px
+}
+
+.productosnaica tr {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productosnaica td {
+    width: 20%;
+    padding: 0 25px;
+    font-size: 18px;
+}
+
+.productotipo {
+  font: 700 16px Montserrat;
+  text-transform: uppercase
+}
+
+.productosnaica thead {
+    background: var(--negro);
+    color: var(--blanco);
+  padding: 0 20px
+}
+
+.productosnaica tr:nth-child(2n+2) {
+    background: #eee;
+}
+
+.cuadrotitulo {
+  width: 80%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  font: 500 30px Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 10px
+}
+
+.copynaica {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  background: #000;
+  font: 400 15px Montserrat;
+  letter-spacing: 10px;
+}
+
+.footerlogos img {
+  margin: 0 30px;
+  height: 50px;
+}
+
+.footerlogos {
+  display: block!important;
+}
+
+.naicainformacion {
+  height: 230px;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+  overflow: hidden;
+  padding: 0 40px;
+  flex-wrap: wrap
+}
+
+.naicafoot {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.naicainformacion img {
+  height: 80px;
+  margin-top: -20px;
+    filter: saturate(5);
+}
+
+.naicainformacion span {
+  margin: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.naicainformacion i {
+  margin: 0 5px;
+  font-size: 20px
+}
+
+.naicafoot a { 
+color: #fff;
+}

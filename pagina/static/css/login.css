@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+  height: 80vh
+}
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font: 15px Montserrat;
+  border-radius: 10px;
+  color: #000;
+  letter-spacing: 1px
+}
+.form button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--azul);
+  width: 50%;
+  border: 0;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 20px auto;
+  letter-spacing: 3px;
+  font-weight: bolder
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #000;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: montserrat;
+}
+.form .message a {
+  color: var(--azul);
+  padding: 2px 5px; 
+  border-radius: 2px
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #9650FF;
+}
+body {
+  background-image: url(https://images2.imgbox.com/3c/cc/5lAWNhln_o.jpeg);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0!important;
+  margin: 0!important
+}
+
+.login-logo {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000 
+}
+
+.login-logo img {
+  width: 90%;
+  display: block
+}
+
+.log-titulo {
+  text-align: center;
+  font: 500 35px Montserrat;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px
+}
+
+.naicanavegacion {
+  height: 80px;
+  background: var(--negro);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999999!important
+}
+
+.naicalogo img {
+    height: 70px;
+    margin-top: -15px;
+    filter: saturate(5);
+}
+
+.naicainterior {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  justify-content: space-between
+}
+
+.movimiento {
+  position: relative;
+  z-index:1;
+  padding:2px 6px;
+}
+
+.movimiento:after {
+  position: absolute;
+  top:0; bottom: 0;
+  right: 0;left: 0;
+  display: block;
+  background-color: var(--azul);
+  content: "";
+  transform: translate3d(-101%,0,0);
+  z-index:-1;
+  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.movimiento:hover {
+  color: #fff!important;
+}
+
+.movimiento:hover:after {
+  transform: translate3d(0,0,0);
+}
+
+a.enlace {
+  font: 500 20px var(--fuente);
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 10px;
+  letter-spacing: 2px;
+  display:inline-block!important;
+  position: relative;
+  overflow: hidden;
+  padding:5px 10px;
+  text-transform: uppercase;
+  transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+a.enlace:hover {  color:#CF2034; transition: 0.2s}
+
+.naicainformacion {
+  height: 200px;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+  overflow: hidden;
+  padding: 0 40px
+}
+
+.naicainformacion img {
+  height: 80px;
+  margin-top: -20px;
+    filter: saturate(5);
+}
+
+.naicainformacion span {
+  margin: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.naicainformacion i {
+  margin: 0 5px;
+  font-size: 20px
+}
+
+:root {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --blanco2: #eaeaea;
+  --azul: #4B50FF;
+  --acqua: #78D2C3;
+  --lila: #9650FF;
+  padding: 0;
+  --fuente: Montserrat;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+  margin: 0
+}
+
+.copynaica {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  background: #000;
+  font: 400 15px Montserrat;
+  letter-spacing: 10px;
+}
+
+
+.footerlogos img {
+  margin: 0 30px;
+  height: 50px;
+}
+
+.footerlogos {
+  display: block!important;
+}
+
+.naicainformacion {
+  height: 230px;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+  overflow: hidden;
+  padding: 0 40px;
+  flex-wrap: wrap
+}
+
+.naicafoot {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.naicainformacion img {
+  height: 80px;
+  margin-top: -20px;
+    filter: saturate(5);
+}
+
+.naicainformacion span {
+  margin: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.naicainformacion i {
+  margin: 0 5px;
+  font-size: 20px
+}
+
+.naicafoot a { 
+color: #fff;
+}
