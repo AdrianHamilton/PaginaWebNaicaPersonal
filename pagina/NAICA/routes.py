@@ -63,7 +63,6 @@ def contacto():
     }
 
     if request.method == 'POST':
-        print("information sent via post")
         context['go_to_form'] = True
 
 

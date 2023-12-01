@@ -10,13 +10,13 @@ import json
 app = Flask(__name__)
 
 # App configuration
-app.config['SECRET_KEY'] = "claveSecreta"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///NaicaData.db'
-app.config['MAIL_SERVER'] = "smtp.gmail.com"
-app.config['MAIL_PORT'] = "587"
-app.config['MAIL_USE_TLS'] = "True"
-app.config['MAIL_USERNAME'] = "no-reply@naica.com"
-app.config['MAIL_PASSWORD'] = "B52C670107AF90B397D82911B9987D3C11854017D68BA69BBEE7366B8C3D5D97"
+app.config['SECRET_KEY'] = config['SECRET_KEY']
+app.config['SQLALCHEMY_DATABASE_URI'] = config['SQLALCHEMY_DATABASE_URI']
+app.config['MAIL_SERVER'] = config['MAIL_SERVER']
+app.config['MAIL_PORT'] = config['MAIL_PORT']
+app.config['MAIL_USE_TLS'] = config['MAIL_USE_TLS']
+app.config['MAIL_USERNAME'] = config['MAIL_USERNAME']
+app.config['MAIL_PASSWORD'] = config['MAIL_PASSWORD']
 
 # App extensions
 db = SQLAlchemy(app)
@@ -43,7 +43,7 @@ from .NAICA import routes
 # app = Flask(__name__)
 
 # # App configuration
-# app.config['SECRET_KEY'] = "claveSecreta"
+# app.config['SECRET_KEY'] = config['SECRET_KEY']
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///NaicaData.db'
 
 # # App extensions
