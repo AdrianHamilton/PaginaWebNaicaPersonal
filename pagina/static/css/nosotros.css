@@ -102,7 +102,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 
 .nombrenaica {
   height: 80vh;
-  background: url(https://images2.imgbox.com/17/ec/5IPFwo2y_o.jpeg);
+  background: url('/static/img/img_naica_nosotros_nombre.jpg');
   background-position: center;
   background-size: cover;
   display:flex;
@@ -134,7 +134,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
   height: 80vh;
   background-size: cover;
   background-position: center;
-  background: url(https://images2.imgbox.com/f5/c4/f7dg7vz0_o.jpeg);
+  background: url('/static/img/img_naica_nosotros_sinergia.jpeg');
   display: flex;
   align-items: center;
   justify-content: flex-start
@@ -144,7 +144,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
   height: 80vh;
   background-size: cover;
   background-position: center;
-  background: url(https://images2.imgbox.com/dc/ce/PHKPqrH0_o.jpeg);
+  background: url('/static/img/img_naica_nosotros_valor.jpeg');
   display: flex;
   align-items: center;
   justify-content: flex-end
@@ -219,7 +219,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 
 .naicanosotros {
   height: 70vh;
-  background-image: url(https://images2.imgbox.com/3a/ec/SFn27IS6_o.jpeg);
+  background-image: url('/static/img/img_naica_nosotros_servicio.jpg');
   background-position: center center;
   background-size: cover;
   display: flex;
@@ -358,3 +358,4 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 .naicafoot a { 
 color: #fff;
 }
+
