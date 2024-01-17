@@ -3,8 +3,8 @@ from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-# with open('/etc/config.json', 'r') as jsonfile:
-#     config = json.load(jsonfile)
+with open('/etc/config.json', 'r') as jsonfile:
+    config = json.load(jsonfile)
 
 # App initialization
 app = Flask(__name__)

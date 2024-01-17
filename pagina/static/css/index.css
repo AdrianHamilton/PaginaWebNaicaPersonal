@@ -359,39 +359,62 @@ body#naicaweb {
 
 .naicabanner {
   height: 100vh;
-  background: var(--blanco2);
+  background: url("{{ url_for('static', filename='img/img_naica_home.jpg') }}") center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .naicatitulo {
-  font: 300 40px Montserrat;
-  text-transform: uppercase;
-  line-height: 10px;
-  margin-right: 100px
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: #fff; /* Texto por defecto en blanco */
+  position: absolute;
+  left: -20%;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.naicatitulo n,
+.naicatitulo o {
+  color: #4B50FF; 
+}
+
+.naicatitulo m {
+  color: #4B50FF; 
+}
+
+.naicasubtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: #fff; /* Texto por defecto en blanco */
+  position: absolute;
+  left: -20%;
+  top: 70%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 .naicatarjeta img {
-  height: 55vh
+  height: 100%;
 }
 
-.naicatitulo n, .naicatitulo o {
-  display: block;
-}
-
-.naicatitulo o {
-  text-align: right
-}
 
 .naicatop {
   display: flex; 
  align-items: center
 }
 
-.naicatitulo m {
-  font: 400 200px var(--fuente)
-}
 
 .naicaproductos {
   background: var(--blanco);
@@ -508,6 +531,15 @@ body#naicaweb {
 .naicadireccion i {
   font-size: 30px;
   margin-right: 10px;
+}
+
+.legales {
+  width: 80%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: Montserrat;
 }
 
 .formulariodatos m {
