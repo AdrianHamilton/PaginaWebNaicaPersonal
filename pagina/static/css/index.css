@@ -761,3 +761,38 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 .naicafoot a { 
 color: #fff;
 }
+
+.linksentidadregulatoria {
+ display: flex;
+ color: #ffffff;
+ transition: color 0.3s ease;
+  background: var(--negro);
+ text-align: center;
+  align-items: center;
+  justify-content: center;
+  font: 700 16px Montserrat; 
+}
+
+.linksentidadregulatoria2 {
+  display: flex;
+ color: white;
+  background: var(--negro);
+ text-align: center;
+  align-items: center;
+  justify-content: center;
+  font: 700 16px Montserrat; 
+}
+
+.separador {
+  background: var(--negro); 
+}
+
+.naicacapitalfin {
+  background: var(--negro);
+  color: white;
+  text-align: center;
+   align-items: center;
+   justify-content: center;
+   font: Montserrat; 
+ } 
+}
