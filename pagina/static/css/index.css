@@ -376,10 +376,11 @@ body#naicaweb {
   letter-spacing: 3px;
   color: #fff; /* Texto por defecto en blanco */
   position: absolute;
-  left: -20%;
+  text-align: left;
+  left: 0%;
   top: 40%;
   transform: translateY(-50%);
-  width: 100%;
+  width: 80%;
 }
 
 .naicatitulo n,
@@ -391,6 +392,15 @@ body#naicaweb {
   color: #4B50FF; 
 }
 
+.naicabarra {
+  position: absolute;
+  background: linear-gradient(to left, #4B50FF, rgba(75, 80, 255, 0)); /* Degradado de azul a transparente */
+  width: 40%;
+  height: 4px; 
+  left: 0%;
+  top: 60%;
+}
+
 .naicasubtitulo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -399,7 +409,8 @@ body#naicaweb {
   letter-spacing: 3px;
   color: #fff; /* Texto por defecto en blanco */
   position: absolute;
-  left: -20%;
+  text-align: left;
+  left: 0%;
   top: 70%;
   transform: translateY(-50%);
   width: 100%;
@@ -539,7 +550,9 @@ body#naicaweb {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font: Montserrat;
+  font-size: 10px;
 }
 
 .formulariodatos m {
