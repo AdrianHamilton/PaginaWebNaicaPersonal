@@ -377,7 +377,7 @@ body#naicaweb {
   color: #fff; /* Texto por defecto en blanco */
   position: absolute;
   text-align: left;
-  left: 0%;
+  left: 15%;
   top: 40%;
   transform: translateY(-50%);
   width: 80%;
@@ -397,7 +397,7 @@ body#naicaweb {
   background: linear-gradient(to left, #4B50FF, rgba(75, 80, 255, 0)); /* Degradado de azul a transparente */
   width: 40%;
   height: 4px; 
-  left: 0%;
+  left: 15%;
   top: 60%;
 }
 
@@ -410,7 +410,7 @@ body#naicaweb {
   color: #fff; /* Texto por defecto en blanco */
   position: absolute;
   text-align: left;
-  left: 0%;
+  left: 15%;
   top: 70%;
   transform: translateY(-50%);
   width: 100%;
