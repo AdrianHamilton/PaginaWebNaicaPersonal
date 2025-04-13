@@ -1,7 +1,6 @@
-
-.naicavalores {
+ .naicavalores {
   height: 80vh;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   top: 80px;
   overflow: hidden;
@@ -142,12 +141,13 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 
 .naicavalor {
   height: 80vh;
+  background-image: url('/static/img/img_naica_nosotros_valor.jpeg');
   background-size: cover;
   background-position: center;
-  background: url('/static/img/img_naica_nosotros_valor.jpeg');
+  background-repeat: no-repeat; /* Esto evita que se repita */
   display: flex;
   align-items: center;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .sinergiainfo {
@@ -355,7 +355,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
   font-size: 20px
 }
 
-.naicafoot a { 
-color: #fff;
-}
-
+.naicafoot a {
+  color: #fff;
+  }
+     

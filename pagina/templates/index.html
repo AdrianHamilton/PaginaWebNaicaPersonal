@@ -48,18 +48,18 @@
 </a><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
   <body id="naicaweb">
-    <a id="chat-circle" class="btn btn-raised" href="https://api.whatsapp.com/send?phone=5215545284007&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20de%20Naica%20y%20sus%20productos">
-         
+    <a id="chat-circle" class="btn btn-raised" href="https://api.whatsapp.com/send?phone=525593377291&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20de%20Naica%20y%20sus%20productos">
+
           <i class="fa-brands fa-whatsapp"></i>
     </a>
-   
+
     <div class="naicanavegacion">
       <div class="naicainterior">
         <div class="naicalogo"><a href="{{ url_for('index') }}"><img src="https://images2.imgbox.com/c7/1a/xWAmMlIZ_o.png"/></a></div>
         <div class="naicaenlaces">
             <a href="{{ url_for('nosotros') }}" class="enlace movimiento">Nosotros</a>
           <a href="{{ url_for('contacto') }}" class="enlace movimiento">Contacto</a>
-          <a href="https://portal.naica.com" class="enlace movimiento">Acceso</a>
+          <!--  <a href="https://portal.naica.com" class="enlace movimiento">Acceso</a> -->
         </div>
       </div>
     </div>
@@ -76,8 +76,8 @@
         <div class="naicatarjeta"><img src="{{ url_for('static', filename='img/img_naica_home.jpg') }}" alt=""/></div>
       </div>
     </div>
-     
-    <div style="height: 100vh; background: #000">
+
+    <div>
   <!-- start of hero -->
   <section class="hero-slider hero-style">
     <div class="swiper-container">
@@ -101,7 +101,7 @@
           <!-- end slide-inner -->
         </div>
         <!-- end swiper-slide -->
-  
+
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image" data-background="{{ url_for('static', filename='img/img_naica_capital_business.jpg') }}">
             <div class="container">
@@ -121,7 +121,7 @@
           <!-- end slide-inner -->
         </div>
         <!-- end swiper-slide -->
-       
+
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image" data-background="{{ url_for('static', filename='img/img_naica_capital_expansion.jpg') }}">
             <div class="container">
@@ -143,7 +143,7 @@
         <!-- end swiper-slide -->
       </div>
       <!-- end swiper-wrapper -->
-  
+
       <!-- swipper controls -->
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
@@ -215,46 +215,50 @@ Te invitamos a consultarlo en la página https://www.buro.gob.mx/<br><br><br><br
 
 Costo Anual Total (CAT) PROMEDIO 97.5% sin IVA.
 Para fines informativos y de comparación exclusivamente.
-Fecha de cálculo 01 de enero del 2024. Vigencia del CAT hasta 31 de enero del 2025. Ejemplo representativo: con monto por crédito de $100,000 MXN. Con una tasa de interés anual del 70.0% (sin IVA) Tasa Fija Anual Simple y a un plazo de 12 meses. 
+Fecha de cálculo 01 de enero del 2024. Vigencia del CAT hasta 31 de enero del 2025. Ejemplo representativo: con monto por crédito de $100,000 MXN. Con una tasa de interés anual del 70.0% (sin IVA) Tasa Fija Anual Simple y a un plazo de 12 meses.
 Crédito sujeto a aprobación.
 Consulta términos, condiciones y comisiones de contratación.<br><br><br><br>
     </div>
-   
+
      <div class="naicainformacion">
        <div class="naicafoot">
      <img src="https://images2.imgbox.com/c7/1a/xWAmMlIZ_o.png" alt=""/>
          <span style="font-family: montserrat">Av. Paseo de la Reforma 505 Piso 15, Cuauhtémoc, CDMX CP. 06500</span>
-         <o><a href="https://www.facebook.com/naica.holding/"><i class="fa-brands fa-square-facebook"></i></a><a href="https://www.instagram.com/gruponaica/"><i class="fa-brands fa-square-instagram"></i></a><a href="https://www.linkedin.com/company/naicatechnologies"><i class="fa-brands fa-linkedin"></i></a></o></div>
-       <div class="footerlogos"><a href="https://www.gob.mx/cnbv"><img style="height:49px" src="https://images2.imgbox.com/a4/9b/jZ9rAfYa_o.png" alt=""/></a>
-        <a href="https://www.condusef.gob.mx/"><img style="height:49px" src="https://images2.imgbox.com/b7/87/i1Mr6KMf_o.png" alt=""/></a>
-        <a href="https://www.buro.gob.mx/"><img style="height:49px" src="https://images2.imgbox.com/53/f6/pVS4swvF_o.png" alt=""/></a>
-        <img style="height:49px" src="https://images2.imgbox.com/bc/b7/DKfo8uM9_o.png" alt=""/></div>
-      </div>
-      <div class="separador">
-        <br><br><br>
-      </div>
-        <div class="linksentidadregulatoria">
-            <a href="{{ url_for('static', filename='doc/Naica_Capital_Aviso_Privacidad.pdf') }}" style="color: #ffffff;font-weight: normal" target="_blank">Aviso de privacidad</a>&nbsp;| &nbsp;
-            <a href="{{ url_for('static', filename='doc/Naica_Capital_UNE.pdf') }}" style="color: #ffffff;font-weight: normal" target="_blank">UNE</a> &nbsp;|&nbsp;
-            <a href="{{ url_for('static', filename='doc/Naica_Capital_Despacho_Cobranza.pdf') }}" style="color: #ffffff;font-weight: normal" target="_blank">Despacho de cobranza</a> &nbsp;|&nbsp;
-            <a href="{{ url_for('static', filename='doc/Naica_Capital_Modificaciones_Contrato.docx') }}" style="color: #ffffff;font-weight: normal" target="_blank">Aviso de modificaciones al contrato</a>            
-          </div>
-            <div class="linksentidadregulatoria2">    
-            <a href="{{ url_for('static', filename='doc/Naica_Capital_Formato_Aclaraciones.docx') }}" style="color: #ffffff;font-weight: normal" target="_blank">Formato de aclaraciones</a> &nbsp;|&nbsp;
-            <a href="https://registros.condusef.gob.mx/reco/resultado_institucion.php" style="color: #ffffff;font-weight: normal" target="_blank">Consulta los costos y comisiones de nuestros productos</a>
+         <o><a href="https://www.facebook.com/naica.holding/"><i class="fa-brands fa-square-facebook"></i></a><a href="https://www.instagram.com/gruponaica/"><i class="fa-brands fa-square-instagram"></i></a>
+        <!--
+         <a href="https://www.linkedin.com/company/naicatechnologies"><i class="fa-brands fa-linkedin"></i></a>
+        -->
+         </o></div>
+         <div class="footerlogos"><a href="https://www.gob.mx/cnbv"><img style="height:49px" src="https://images2.imgbox.com/a4/9b/jZ9rAfYa_o.png" alt=""/></a>
+          <a href="https://www.condusef.gob.mx/"><img style="height:49px" src="https://images2.imgbox.com/b7/87/i1Mr6KMf_o.png" alt=""/></a>
+          <a href="https://www.buro.gob.mx/"><img style="height:49px" src="https://images2.imgbox.com/53/f6/pVS4swvF_o.png" alt=""/></a>
+          <img style="height:49px" src="https://images2.imgbox.com/bc/b7/DKfo8uM9_o.png" alt=""/></div>
         </div>
         <div class="separador">
           <br><br><br>
         </div>
-        <div class="naicacapitalfin">
-          Naica Capital SA de CV SOFOM E.N.R.
-        </div>
-    <div class="copynaica">© COPYRIGHT 2024</div>
-  </body><script src="https://kit.fontawesome.com/acccb6e668.js" crossorigin="anonymous"></script>
-  <!-- partial -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script  src="./static/js/index.js"></script>
+          <div class="linksentidadregulatoria">
+              <a href="{{ url_for('static', filename='doc/Naica_Capital_Aviso_Privacidad.pdf') }}" style="color: #ffffff;font-weight: normal" target="_blank">Aviso de privacidad</a>&nbsp;| &nbsp;
+              <a href="{{ url_for('static', filename='doc/Naica_Capital_UNE.pdf') }}" style="color: #ffffff;font-weight: normal" target="_blank">UNE</a> &nbsp;|&nbsp;
+              <a href="{{ url_for('static', filename='doc/Naica_Capital_Despacho_Cobranza.pdf') }}" style="color: #ffffff;font-weight: normal" target="_blank">Despacho de cobranza</a> &nbsp;|&nbsp;
+              <a href="{{ url_for('static', filename='doc/Naica_Capital_Modificaciones_Contrato.docx') }}" style="color: #ffffff;font-weight: normal" target="_blank">Aviso de modificaciones al contrato</a>
+            </div>
+              <div class="linksentidadregulatoria2">
+              <a href="{{ url_for('static', filename='doc/Naica_Capital_Formato_Aclaraciones.docx') }}" style="color: #ffffff;font-weight: normal" target="_blank">Formato de aclaraciones</a> &nbsp;|&nbsp;
+              <a href="https://registros.condusef.gob.mx/reco/resultado_institucion.php" style="color: #ffffff;font-weight: normal" target="_blank">Consulta los costos y comisiones de nuestros productos</a>
+          </div>
+          <div class="separador">
+            <br><br><br>
+          </div>
+          <div class="naicacapitalfin">
+            Naica Capital SA de CV SOFOM E.N.R.
+          </div>
+      <div class="copynaica">© COPYRIGHT 2024</div>
+    </body><script src="https://kit.fontawesome.com/acccb6e668.js" crossorigin="anonymous"></script>
+    <!-- partial -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script  src="./static/js/index.js"></script>
   
-  </body>
-  </html>
+    </body>
+    </html>
   

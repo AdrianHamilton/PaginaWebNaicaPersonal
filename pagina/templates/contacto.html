@@ -22,7 +22,7 @@
       <!-- End Meta Pixel Code -->
     </head>
     <body>
-  
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNYWESR0XP"></script>
 <script>
@@ -41,7 +41,7 @@
       <div class="naicaenlaces">
         <a href="{{ url_for('nosotros') }}" class="enlace movimiento">Nosotros</a>
         <a href="{{ url_for('contacto') }}" class="enlace movimiento">Contacto</a>
-        <a href="https://portal.naica.com" class="enlace movimiento">Acceso</a>
+        <!--  <a href="https://portal.naica.com" class="enlace movimiento">Acceso</a> -->
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
 
           <form method="POST" action="/contacto">
             {{ form.csrf_token }}
-            <input name="name" type="text" class="feedback-input" placeholder="Nombre" />   
+            <input name="name" type="text" class="feedback-input" placeholder="Nombre" />
             <input name="email" type="text" class="feedback-input" placeholder="Email" />
             <input name="phone_number" type="text" class="feedback-input" placeholder="Teléfono" />
             <textarea name="message" class="feedback-input" placeholder="Mensaje"></textarea>
@@ -81,16 +81,21 @@
         </div>
       </div>
   </div>
-  <div class="mapa_naica">
+
+<div class="mapa_naica">
     <div class="naica_ubicacion">Nuestra ubicación</div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1602.935428908247!2d-99.17575571138858!3d19.424314027846147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2017bd7d61331%3A0xa35096716f29d7f4!2sNAICA!5e0!3m2!1ses!2smx!4v1699020631850!5m2!1ses!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.209533829217!2d-99.1753066!3d19.4243607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff248cd6153b%3A0xafe1474af2b8c59c!2sNAICA!5e0!3m2!1ses-419!2smx!4v1612964971625!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
  <div class="naicainformacion">
+         <span style="font-family: montserrat;">Para mayor información: hola@naica.com o a los teléfonos: 52 55 9047 0967 / 800 624 22 00</span>
      <div class="naicafoot">
    <img src="https://images2.imgbox.com/c7/1a/xWAmMlIZ_o.png" alt=""/>
-       <span style="font-family: montserrat">Av. Paseo de la Reforma 505 Piso 15, Cuauhtémoc, CDMX CP. 06500</span>
+   <span style="font-family: montserrat;">Av. Paseo de la Reforma 505 Piso 15, Cuauhtémoc, CDMX CP. 06500</span>
         <o><a href="https://www.facebook.com/naica.holding/"><i class="fa-brands fa-square-facebook"></i></a>
-			<a href="https://www.instagram.com/gruponaica/"><i class="fa-brands fa-square-instagram"></i></a>
-			<a href="https://www.linkedin.com/company/naicatechnologies"><i class="fa-brands fa-linkedin"></i></a></o></div>
+                        <a href="https://www.instagram.com/gruponaica/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <!--
+                        <a href="https://www.linkedin.com/company/naicatechnologies"><i class="fa-brands fa-linkedin"></i></a>
+                        -->
+        </o></div>
       <div class="footerlogos"><a href="https://www.gob.mx/cnbv"><img style="height:49px" src="https://images2.imgbox.com/a4/9b/jZ9rAfYa_o.png" alt=""/></a>
         <a href="https://www.condusef.gob.mx/"><img style="height:49px" src="https://images2.imgbox.com/b7/87/i1Mr6KMf_o.png" alt=""/></a>
         <a href="https://www.buro.gob.mx/"><img style="height:49px" src="https://images2.imgbox.com/53/f6/pVS4swvF_o.png" alt=""/></a>
@@ -102,6 +107,6 @@
 
 
 <!-- partial -->
-  
+
 </body>
 </html>

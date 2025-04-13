@@ -1,3 +1,355 @@
+:root {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --blanco2: #eaeaea;
+  --azul: #4B50FF;
+  --acqua: #78D2C3;
+  --lila: #9650FF;
+  --fuente: Montserrat;
+  font-size: 16px;
+}
+
+.naicaformulario {
+  width: 31.25rem;
+  text-align: center;
+  background: #000000e5;
+  padding: 2.5rem 5rem;
+  margin-left: 6.25rem; 
+  max-width: 90%;
+}
+
+
+.formulariodatos m {
+  height: 3.125rem;
+  outline: 0.0625rem solid #222;
+  display: flex;
+  margin: 1.875rem 0;
+  font: 0.75rem var(--fuente);
+  background: #0d0d0d;
+  align-items: center;
+  padding: 0 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+
+.naicaformulario n {
+  font: 2.1875rem var(--fuente);
+  display: block;
+  margin-bottom: 3.125rem;
+  color: var(--blanco);
+  text-align: center;
+}
+
+
+.naicaformulario img {
+  height: 9.375rem;
+  margin-bottom: 3.125rem;
+}
+
+
+.bodysolo {
+  background: url(https://images2.imgbox.com/09/5a/1qACAjJi_o.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+body#soloform {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formulariodatos input {
+  font: 0.9375rem Montserrat;
+}
+
+form { 
+  max-width: 26.25rem; 
+  margin: 3.125rem auto; 
+}
+
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 0.3125rem;
+  line-height: 1.375rem;
+  background-color: var(--negro);
+  border: 0.125rem solid #222;
+  transition: all 0.3s;
+  padding: 0.8125rem;
+  margin-bottom: 0.9375rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus { 
+  border: 0.125rem solid var(--blanco);
+  background: var(--blanco);
+  color: var(--negro);
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: var(--lila);
+  border-radius: 0.3125rem;
+  border: 0;
+  cursor: pointer;
+  color: white !important;
+  font-size: 1.5rem;
+  padding: 0.625rem 0;
+  transition: all 0.3s;
+  font-weight: 600;
+  margin-top: 1.25rem;
+}
+
+.naicanavegacion {
+  height: 5rem;
+  background: var(--negro);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999999 !important;
+}
+
+.naicalogo img {
+  height: 4.375rem;
+  margin-top: -0.9375rem;
+  filter: saturate(5);
+}
+
+.naicainterior {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding: 0 1.25rem;
+  justify-content: space-between;
+}
+
+.movimiento {
+  position: relative;
+  z-index: 1;
+  padding: 0.125rem 0.375rem;
+}
+
+.movimiento:after {
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  background-color: var(--azul);
+  content: "";
+  transform: translate3d(-101%,0,0);
+  z-index: -1;
+  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+.movimiento:hover {
+  color: #fff !important;
+}
+
+.movimiento:hover:after {
+  transform: translate3d(0,0,0);
+}
+
+a.enlace {
+  font: 500 1.25rem var(--fuente);
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 0.625rem;
+  letter-spacing: 0.125rem;
+  display: inline-block !important;
+  position: relative;
+  overflow: hidden;
+  padding: 0.3125rem 0.625rem;
+  text-transform: uppercase;
+  transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+a.enlace:hover {  
+  color: #CF2034; 
+  transition: 0.2s;
+}
+
+.copynaica {
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  background: #000;
+  font: 400 0.9375rem Montserrat;
+  letter-spacing: 0.625rem;
+}
+
+.footerlogos img {
+  margin: 0 1.875rem;
+  height: 3.125rem;
+}
+
+.footerlogos {
+  display: block !important;
+}
+
+.naicainformacion {
+  height: 14.375rem;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+  overflow: hidden;
+  padding: 0 2.5rem;
+  flex-wrap: wrap;
+}
+
+.naicafoot {
+  height: 9.375rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.naicainformacion img {
+  height: 5rem;
+  margin-top: -1.25rem;
+  filter: saturate(5);
+}
+
+.naicainformacion span {
+  margin: 0 1.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03125rem;
+}
+
+.naicainformacion i {
+  margin: 0 0.3125rem;
+  font-size: 1.25rem;
+}
+
+.aviso {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #fff;
+}
+
+.check_aviso {
+  margin-top: 1.25rem;
+  color: #fff;
+  font: 0.8125rem Montserrat;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0625rem;
+}
+
+.naicafoot a {
+  color: #fff;
+}
+
+.mapa_naica {
+  padding: 2.5rem;
+}
+
+.mapa_naica iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+.naica_ubicacion {
+  margin: 0 auto 2.5rem;
+  display: block;
+  font: 3.125rem Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+  .naicaformulario {
+    margin-left: 2rem;
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .naicaformulario {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+  }
+  
+  .bodysolo {
+    justify-content: center; 
+    height: auto; 
+    min-height: 100vh; 
+    padding: 20px 0; 
+  }
+  
+  .naica_ubicacion {
+    font-size: 2rem;
+  }
+  
+  .mapa_naica iframe {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+  
+  .naicaformulario n {
+    font-size: 1.5rem;
+  }
+  
+  .naica_ubicacion {
+    font-size: 1.5rem;
+  }
+  
+  .feedback-input {
+    font-size: 1rem;
+  }
+  
+  .mapa_naica iframe {
+    height: 15.625rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .naicaformulario {
   width: 500px;
   text-align: center;
@@ -76,7 +428,7 @@ box-sizing: border-box;
 outline:0;
 }
 
-.feedback-input:focus { border:2px solid var(--blanco); 
+.feedback-input:focus { border:2px solid var(--blanco);
 background: var(--blanco);
 color: var(--negro)}
 
@@ -177,96 +529,97 @@ margin: 0
 }
 
 .copynaica {
-height: 100px;
-display: flex;
-align-items: center;
-color: #fff;
-justify-content: center;
-background: #000;
-font: 400 15px Montserrat;
-letter-spacing: 10px;
-}
-
-
-.footerlogos img {
-margin: 0 30px;
-height: 50px;
-}
-
-.footerlogos {
-display: block!important;
-}
-
-.naicainformacion {
-height: 230px;
-background: var(--negro);
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--blanco);
-overflow: hidden;
-padding: 0 40px;
-flex-wrap: wrap
-}
-
-.naicafoot {
-  height: 150px;
+  height: 100px;
   display: flex;
   align-items: center;
-  width: 100%;
+  color: #fff;
   justify-content: center;
-}
-
-.naicainformacion img {
-height: 80px;
-margin-top: -20px;
-  filter: saturate(5);
-}
-
-.naicainformacion span {
-margin: 0 30px;
-text-transform: uppercase;
-letter-spacing: .5px;
-}
-
-.naicainformacion i {
-margin: 0 5px;
-font-size: 20px
-}
-
-.aviso {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
+  background: #000;
+  font: 400 15px Montserrat;
+  letter-spacing: 10px;
   }
-
-.check_aviso {
-margin-top: 20px;
-color: #fff;
-font: 13px Montserrat;
-height: 40px;
-display: flex;
-align-items: center;
-letter-spacing: 1px
-}
-
-.naicafoot a { 
-color: #fff;
-}
-
-.mapa_naica {
-padding: 40px;
-}
-
-.mapa_naica iframe {
-margin: 0 auto;
-display: block
-}
-
-.naica_ubicacion {
-margin: 0 auto 40px;
-display: block;
-font: 50px Montserrat;
-text-transform: uppercase;
-text-align: center;
-}
+  
+  
+  .footerlogos img {
+  margin: 0 30px;
+  height: 50px;
+  }
+  
+  .footerlogos {
+  display: block!important;
+  }
+  
+  .naicainformacion {
+  height: 230px;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blanco);
+  overflow: hidden;
+  padding: 0 40px;
+  flex-wrap: wrap
+  }
+  
+  .naicafoot {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .naicainformacion img {
+  height: 80px;
+  margin-top: -20px;
+    filter: saturate(5);
+  }
+  
+  .naicainformacion span {
+  margin: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  }
+  
+  .naicainformacion i {
+  margin: 0 5px;
+  font-size: 20px
+  }
+  
+  .aviso {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+    }
+  
+  .check_aviso {
+  margin-top: 20px;
+  color: #fff;
+  font: 13px Montserrat;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px
+  }
+  
+  .naicafoot a {
+  color: #fff;
+  }
+  
+  .mapa_naica {
+  padding: 40px;
+  }
+  
+  .mapa_naica iframe {
+  margin: 0 auto;
+  display: block
+  }
+  
+  .naica_ubicacion {
+  margin: 0 auto 40px;
+  display: block;
+  font: 50px Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  }
+*/
