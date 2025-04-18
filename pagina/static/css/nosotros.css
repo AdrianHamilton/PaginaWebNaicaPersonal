@@ -1,10 +1,47 @@
- .naicavalores {
+.naicavalores {
   height: 80vh;
   background-size: cover;
   background-position: center;
-  top: 80px;
+  position: relative; 
   overflow: hidden;
-  padding: 0
+  padding: 0;
+}
+
+.texto-valores {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+}
+
+.titulo-disrupcion {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  position: absolute;
+  bottom: 230px;
+  right: 50%;
+  font: 40px Montserrat, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: white;
+  margin: 0;
+}
+
+.subtitulo-disrupcion {
+  text-align: right;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 170px;
+  right: 20%;
+  letter-spacing: 2px;
+  font: 35px Montserrat, sans-serif;
+  color: white;
+  margin: 0;
 }
 
 body {padding: 0; margin: 0}
@@ -419,13 +456,6 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 1024px) {
   .experiencias {
     height: 60vh;
@@ -456,5 +486,47 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
   .expnombre {
     font-size: 28px;
     letter-spacing: 8px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .titulo-disrupcion {
+    font-size: 24px;
+    letter-spacing: 4px;
+    right: 20px;
+    white-space: nowrap;
+  }
+
+  .texto-valores {
+    left: auto; 
+    right: 20px; 
+    bottom: 30px;
+    position: absolute;
+    text-align: right;
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-disrupcion {
+    font-size: 18px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    right: 10px;
+    bottom: 50px;
+  }
+
+  .subtitulo-disrupcion {
+    font-size: 12px;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+  }
+
+  .texto-valores {
+    bottom: 20px;
+    left: 10px;
   }
 }
