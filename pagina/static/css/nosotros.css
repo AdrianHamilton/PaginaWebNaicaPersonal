@@ -137,13 +137,14 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
 }
 
 .nombrenaica {
-  height: 80vh;
   background: url('/static/img/img_naica_nosotros_nombre.jpg');
   background-position: center;
   background-size: cover;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
+  padding: 140px 0 100px; 
+  position: relative;
 }
 
 .nombreinside {
@@ -156,7 +157,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
   color: #fff;
   font: 25px montserrat;
   margin-top: 50px;
-  line-height: 40px
+  line-height: 40px;
 }
 
 .cajanombre {
@@ -164,6 +165,7 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
   color: #fff;
   font: 50px montserrat;
   text-transform: uppercase;
+  margin-top: 80px;
 }
 
 .naicasinergia {
@@ -530,3 +532,4 @@ a.enlace:hover {  color:#CF2034; transition: 0.2s}
     left: 10px;
   }
 }
+
